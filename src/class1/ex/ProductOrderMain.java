@@ -24,6 +24,7 @@ public class ProductOrderMain {
         orders[2] = order3;
 
         int totalAmount = 0;
+        // iter쓰면 햐상포문 바로
         for (ProductOrder order : orders) {
             System.out.println("상품명: " + order.productName + ", 가격: " + order.price + ", 수량: " + order.quantity);
             totalAmount += order.price * order.quantity;
