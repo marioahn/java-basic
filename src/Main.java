@@ -1,17 +1,16 @@
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+
 public class Main {
     public static void main(String[] args) {
-        // Press Opt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        // 현재 날짜 가져오기
+        LocalDate currentDate = LocalDate.now();
 
-        // Press Ctrl+R or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+        // 출력 형식 지정하기
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
 
-            // Press Ctrl+D to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Cmd+F8.
-            System.out.println("i = " + i);
-        }
+        // 날짜를 문자열로 변환하여 출력하기
+        String formattedDate = currentDate.format(formatter);
+        System.out.println(formattedDate);
     }
 }
