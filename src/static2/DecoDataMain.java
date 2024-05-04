@@ -1,13 +1,15 @@
 package static2;
 
-//import static static2.DecoData.staticCall;
-//import static static2.DecoData.*;
+import static static2.DecoData.staticCall;
+// 그냥 import가 아니라, import "static"이다!
+// import static static2.DecoData.*; 이렇게 하면 모든 메서드 사용가능~
 
 public class DecoDataMain {
 
     public static void main(String[] args) {
         System.out.println("1. 정적 호출");
-        DecoData.staticCall();
+//        DecoData.staticCall();
+        staticCall(); // 위에서 import해오면 이렇게도 사용 가능함
 //        1. 정적 호출
 //        staticValue=1
 
@@ -29,7 +31,8 @@ public class DecoDataMain {
         //추가
         //인스턴스를 통한 접근
         DecoData data3 = new DecoData();
-        data3.staticCall(); // 4
+        data3.staticCall(); // 4 -> 당연히, 권장x접근이니 노란줄 뜨겠지.
+        // 이렇게 하면 인스턴스메서드처럼 보이잖아.
 
         //클래스를 통한 접근
         DecoData.staticCall(); // 5

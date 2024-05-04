@@ -2,6 +2,7 @@ package static2.ex;
 
 public class MathArrayUtils {
 
+    // 생성자함수에 private을 붙이면, 인스턴스 못 만듦ㅇㅇ
     private MathArrayUtils() {
         //private 인스턴스 생성을 막는다.
     }
