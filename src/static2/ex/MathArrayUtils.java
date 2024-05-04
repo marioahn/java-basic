@@ -15,6 +15,7 @@ public class MathArrayUtils {
         return total;
     }
 
+    // wow 바로 위에서 만든 sum함수 이용해서 빠르게!
     public static double average(int[] values) {
         return (double) sum(values) / values.length;
     }
