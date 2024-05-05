@@ -10,6 +10,7 @@ public class Child extends Parent {
     }
 
     public void call() {
+        // 이렇게 하니까 this도 의미가 확 와닿네. this vs super ㄷㄷ;
         System.out.println("this value = " + this.value); //this 생략 가능
         System.out.println("super value = " + super.value);
 
