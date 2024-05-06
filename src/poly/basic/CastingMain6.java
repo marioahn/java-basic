@@ -1,6 +1,6 @@
 package poly.basic;
 
-public class CastingMain6 {
+public class     CastingMain6 {
 
     public static void main(String[] args) {
         Parent parent1 = new Parent();

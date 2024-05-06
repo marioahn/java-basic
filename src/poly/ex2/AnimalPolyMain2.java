@@ -7,6 +7,8 @@ public class AnimalPolyMain2 {
         Cat cat = new Cat();
         Caw caw = new Caw();
         Duck duck = new Duck();
+        // 위처럼 Animal dog = new Dog();이렇게 안해도 아래가 가능한거임ㅇㅇ
+        // animal을 상속받았기에, Animal타입이 가능함
         Animal[] animalArr = {dog, cat, caw, duck};
 
         //변하지 않는 부분
